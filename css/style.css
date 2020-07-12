@@ -170,9 +170,9 @@ body{
 }
 
 #user-search-button{
-    background-color: #dee6e9;
-    padding: 0.25em 1.75em 0.35em 1.75em;
-    margin: .2em 0.2em;
+    background-color:white  ;
+    padding: 0.25em 0.75em 0.35em 0.75em;
+    margin: 0.2em 0.2em;
     color: black;
     border: none;
     border-radius: 0.2em;
