@@ -178,6 +178,12 @@ body{
     border-radius: 0.2em;
 }
 
+.user-list-icon{
+    height: 15px;
+    width: 15px;
+    padding-right: 0.5em;
+}
+
 #user-list-details{
     margin-top: 2em;
     margin-bottom: 1em;

@@ -102,7 +102,7 @@ var users=[
     var userList=""
     for(var i=0;i<users.length;i++){
         userList+="<div class=\"user-list-item\">\n"+
-        "<div class=\"name list-column\">"+users[i].name+"</div>\n"+
+        "<div class=\"name list-column\"><i class=\"flaticon-user\"></i>"+users[i].name+"</div>\n"+
         "<div class=\"email list-column\">"+users[i].email+"</div>\n";
         console.log(users[i].status);
         if(users[i].status.match("Active")){
