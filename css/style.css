@@ -6,9 +6,18 @@ body{
     height: 100%;
 }
 
+#app-ui{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 #side-menu{
     display: flex;
     flex-direction: column;
+    width: 15%;
+    min-height: 100%;
+    background-color: #25282d;
+    color: white;
 }
 
 #menu-title{
@@ -29,12 +38,6 @@ body{
     font-size: 1em;
     background-color: #6e4bd3;
     border-radius: .2em;
-}
-#side-menu{
-    max-width: 15%;
-    min-height: 100%;
-    background-color: #25282d;
-    color: white;
 }
 
 #menu-options ul{
@@ -57,4 +60,39 @@ body{
 #user-details{
     margin-left: auto;
     margin-right: 1em;
+}
+
+#list{
+    width: 85%;
+    background-color: blue;
+}
+
+#search-bar{
+    background-color: white;
+    padding: 0.5em 1.5em;
+    box-shadow: 5px 10px 100px black ;
+}
+
+#search-field{
+    background-color: white;
+    border: gray 1px solid;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.2em;
+}
+
+#search-placeholder{
+    padding: 0.5em 1em;
+}
+
+#search-button{
+    background-color: #dee6e9;
+    padding: 0.25em 1.75em 0.35em 1.75em;
+    margin: .2em 0.2em;
+    color: black;
+    border: none;
+    border-radius: 0.2em;
+}
+
+#search-button:focus{
 }
