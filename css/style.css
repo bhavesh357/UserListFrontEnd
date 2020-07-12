@@ -107,6 +107,7 @@ body{
     margin: 1em 1em;
     padding-left:1em;
     padding-right: 1em;
+    border: black 1px solid;
 }
 
 #user-number{
