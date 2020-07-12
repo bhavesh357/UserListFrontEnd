@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="/css/style.css">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
     <title>Cuddle</title>
-    </head>
-    <body>
-        <div id="app-ui">
-            <div id="side-menu">
+</head>
+<body>
+    <div id="app-ui">
+        <div id="side-menu">
             <div id="menu-title">
                 <h2 id="app-name">Cuddle</h2>
                 <div id="user-status">ADMIN</div>
@@ -24,181 +24,56 @@
                 <h4 id="user-name">Ryan Larson</h4>
                 <h4 id="user-details">></h4>
             </div>
-            </div>
-            <div id="list">
-                <div id="search-bar">
+        </div>
+        <div id="list">
+            <div id="search-bar">
                 <div id="search-field">
                     <div id="search-placeholder">What do you want to ask?</div>
                     <button id="search-button">Ask</button>
                 </div>
+            </div>
+            <div id="user-list">
+                <div id="user-number">
+                    <h2 id="user-count">Users(20)</h2>
+                    <button id="add-user-button">+ADD NEW</button>
                 </div>
-                <div id="user-list">
-                    <div id="user-number">
-                        <h2 id="user-count">Users(20)</h2>
-                        <button id="add-user-button">+ADD NEW</button>
+                <div id="user-search">
+                    <div id="user-search-placeholder">Search UserName,Email,Status,Role</div>
+                    <button id="user-search-button">?</button>
+                </div>
+                <div id="user-list-details">
+                    <div class="user-list-head">
+                        <div class="name list-column">Name</div>
+                        <div class="email list-column">Email</div>
+                        <div class="status list-column">Status</div>
+                        <div class="role list-column">Role</div>
+                        <div class="last-login list-column">Last Login</div>
+                        <div class="permission list-column">Permission</div>
+                        <div class="option list-column"></div>
                     </div>
-                    <div id="user-search">
-                        <div id="user-search-placeholder">Search UserName,Email,Status,Role</div>
-                        <button id="user-search-button">?</button>
+                    <div class="user-list-item">
+                        <div class="name list-column">Bhavesh Kadam</div>
+                        <div class="email list-column">bkadam357@gmail.com</div>
+                        <div class="status list-column"><div class="status-inactive">Inactive</div> </div>
+                        <div class="role list-column">Administrator</div>
+                        <div class="last-login list-column">2d ago</div>
+                        <div class="permission list-column">Valid</div>
+                        <button class="option list-column">...</button>
                     </div>
-                    <div id="user-list-details">
-                        <div class="user-list-head">
-                            <div class="name list-column">Name</div>
-                            <div class="email list-column">Email</div>
-                            <div class="status list-column">Status</div>
-                            <div class="role list-column">Role</div>
-                            <div class="last-login list-column">Last Login</div>
-                            <div class="permission list-column">Permission</div>
-                            <div class="option list-column"></div>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
-                        <div class="user-list-item">
-                            <div class="name list-column">Bhavesh Kadam</div>
-                            <div class="email list-column">bkadam357@gmail.com</div>
-                            <div class="status list-column">Active</div>
-                            <div class="role list-column">Administrator</div>
-                            <div class="last-login list-column">2d ago</div>
-                            <div class="permission list-column">Valid</div>
-                            <button class="option list-column">...</button>
-                        </div>
+                    <div class="user-list-item">
+                        <div class="name list-column">Bhavesh Kadam</div>
+                        <div class="email list-column">bkadam357@gmail.com</div>
+                        <div class="status list-column"><div class="status-active">Active</div> </div>
+                        <div class="role list-column">Administrator</div>
+                        <div class="last-login list-column">2d ago</div>
+                        <div class="permission list-column">Valid</div>
+                        <button class="option list-column">...</button>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <script src="script.js"></script>
+        
     </body>
-</html>
+    </html>
