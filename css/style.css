@@ -1,0 +1,60 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    height: 100%;
+}
+
+#side-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-title{
+    display: flex;
+}
+
+#app-name{
+    padding-left: 0.5em;
+}
+
+#user-status{
+    padding-left: .5em;
+    display: flex;
+    margin-top: 1.7em;
+    margin-left: 0.5em;
+    margin-bottom: 1.7em;
+    padding-right: 0.5em;
+    font-size: 1em;
+    background-color: #6e4bd3;
+    border-radius: .2em;
+}
+#side-menu{
+    max-width: 15%;
+    min-height: 100%;
+    background-color: #25282d;
+    color: white;
+}
+
+#menu-options ul{
+    padding-inline-start: 10%;
+}
+
+.menu-option{
+    height: 3em;
+    list-style-type: none;
+}
+
+#menu-user{
+    padding-left: 0.75em;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-self: baseline;
+}
+
+#user-details{
+    margin-left: auto;
+    margin-right: 1em;
+}
