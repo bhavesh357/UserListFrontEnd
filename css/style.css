@@ -102,6 +102,8 @@ body{
 #user-list{
     background-color: white;
     margin: 1em 1em;
+    padding-left:1em;
+    padding-right: 1em;
     overflow-y: auto;
 }
 
@@ -109,8 +111,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left:1em;
-    padding-right: 1em;
 }
 
 #add-user-button{
@@ -119,5 +119,27 @@ body{
     font-size: 0.75em;
     padding: 0em 1.75em;
     margin: 1.25em 0em;
+    border-radius: 0.2em;
+}
+
+#user-search{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0em;
+    border: gray 1px solid;
+}
+
+#user-search-placeholder{
+    padding: 0.5em 1em;
+    color: gray;
+}
+
+#user-search-button{
+    background-color: #dee6e9;
+    padding: 0.25em 1.75em 0.35em 1.75em;
+    margin: .2em 0.2em;
+    color: black;
+    border: none;
     border-radius: 0.2em;
 }
