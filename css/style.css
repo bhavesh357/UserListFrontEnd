@@ -65,6 +65,8 @@ body{
 #list{
     width: 85%;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
 }
 
 #search-bar{
@@ -95,4 +97,27 @@ body{
 }
 
 #search-button:focus{
+}
+
+#user-list{
+    background-color: white;
+    margin: 1em 1em;
+    overflow-y: auto;
+}
+
+#user-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:1em;
+    padding-right: 1em;
+}
+
+#add-user-button{
+    color: white;
+    background-color: #6629ea;
+    font-size: 0.75em;
+    padding: 0em 1.75em;
+    margin: 1.25em 0em;
+    border-radius: 0.2em;
 }
