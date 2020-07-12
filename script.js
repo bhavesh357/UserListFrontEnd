@@ -2,98 +2,98 @@ var users=[
     {
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
-        status:"active",
+        status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
         permisiion:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
-        status:"inactive",
+        status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
         permisiion:"Valid"
@@ -104,6 +104,7 @@ var users=[
         userList+="<div class=\"user-list-item\">\n"+
         "<div class=\"name list-column\">"+users[i].name+"</div>\n"+
         "<div class=\"email list-column\">"+users[i].email+"</div>\n";
+        console.log(users[i].status);
         if(users[i].status.match("Active")){
             userList+="<div class=\"status list-column\"><div class=\"status-active\">"+users[i].status+"</div> </div>\n";
         }else{
