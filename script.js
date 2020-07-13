@@ -120,3 +120,16 @@ var users=[
     var userCount= window.document.getElementsByClassName("user-list-item").length;
     console.log(userCount);
     window.document.getElementById("user-count").innerHTML = "Users("+userCount+")";
+    var authenticationSubMenuFlag=true;
+    function showSubMenu(value){
+        var subMenuId="sub-menu-"+value;
+        var subMenu=document.getElementById(subMenuId);
+        console.log(subMenu);
+        if(authenticationSubMenuFlag){
+            subMenu.style.display="block";
+            authenticationSubMenuFlag=false;
+        }else{
+            subMenu.style.display="none";
+            authenticationSubMenuFlag=true;
+        }
+    }
