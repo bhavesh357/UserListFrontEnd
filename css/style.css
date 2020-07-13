@@ -102,6 +102,7 @@ body{
 #search-placeholder{
     padding: 0.5em 1em;
     color: gray;
+    width: 100%;
 }
 
 #search-button{
