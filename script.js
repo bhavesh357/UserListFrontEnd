@@ -117,3 +117,6 @@ var users=[
         "</div>";
     }
     window.document.getElementById("user-list-details").innerHTML+=userList;
+    var userCount= window.document.getElementsByClassName("user-list-item").length;
+    console.log(userCount);
+    window.document.getElementById("user-count").innerHTML = "Users("+userCount+")";
