@@ -48,12 +48,40 @@
                     <h2 id="user-count">Users(20)</h2>
                     <button id="add-user-button">+ ADD NEW</button>
                 </div>
+                <div id="new-user-div">
+                    <label>Enter Name : </label><input id="new-name" type="text"><br>
+                    <label>Enter Email : </label><input id="new-email" type="text"><br>
+                    <label>Enter Status : </label>
+                    <select name="status" id="new-status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select><br>
+                    
+                    
+                    
+                    <label>Enter Role : </label>
+                    <select name="status" id="new-role">
+                        <option value="User">User</option>
+                        <option value="Administrator">Administrator</option>
+                    </select><br>
+
+                    <label>Enter Last Login : </label><input id="last-login" type="number"><br>
+                    
+                    <label>Enter Permission : </label>
+                    <select name="status" id="new-permission">
+                        <option value="Valid">Valid</option>
+                        <option value="Invalid">Invalid</option>
+                    </select><br>
+                    
+                    <button onclick="addUser()">Add</button>
+                </div>
                 <div id="user-search">
                     <div id="user-search-placeholder">
                         <input oninput="search()" id="user-search-mini" class="user-search-placeholder-text" type="text" placeholder="Search UserName,Email,Status,Role">
                     </div>
                     <button onclick="search()" id="user-search-button"><i class="flaticon-search"></i></button>
                 </div>
+                
                 <div id="user-list-details">
                     <div class="user-list-head">
                         <div class="name list-column">Name</div>

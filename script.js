@@ -5,98 +5,98 @@ var users=[
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
         role:"Administrator",
         lastLogin:"2d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     },{
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
         role:"User",
         lastLogin:"3d ago",
-        permisiion:"Valid"
+        permission:"Valid"
     }]
     
     function loadUsers(users){
@@ -112,11 +112,11 @@ var users=[
             }
             userList+="<div class=\"role list-column\">"+users[i].role+"</div>\n"+
             "<div class=\"last-login list-column\">"+users[i].lastLogin+"</div>\n"+
-            "<div class=\"permission list-column\">"+users[i].permisiion+"</div>\n"+
+            "<div class=\"permission list-column\">"+users[i].permission+"</div>\n"+
             "<button class=\"option list-column\">...</button>\n"+
             "</div>";
         }
-        window.document.getElementById("user-list-items").innerHTML+=userList;
+        window.document.getElementById("user-list-items").innerHTML=userList;
         var userCount= window.document.getElementsByClassName("user-list-item").length;
         window.document.getElementById("user-count").innerHTML = "Users("+userCount+")";
     }
@@ -174,9 +174,30 @@ var users=[
             }
         }
         console.log(searchUsers);
-        window.document.getElementById("user-list-items").innerHTML="";
         loadUsers(searchUsers);
         
+    }
+
+    function addUser(){
+        var form=document.getElementById("new-user-form");
+        console.log(form);
+        var newUser={
+            name: "",
+            email:"",
+            status:"",
+            role:"",
+            lastLogin:"",
+            permission:""
+        }
+        newUser.name=document.getElementById("new-name").value;
+        newUser.email=document.getElementById("new-email").value;
+        newUser.status=document.getElementById("new-status").value;
+        newUser.role=document.getElementById("new-role").value;
+        newUser.lastLogin=document.getElementById("last-login").value+"d ago";
+        newUser.permission=document.getElementById("new-permission").value;
+        console.log(newUser);
+        users.push(newUser);
+        loadUsers(users);
     }
     
     document.getElementById("user-search-mini").addEventListener(oninput,search);
