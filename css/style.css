@@ -153,7 +153,10 @@ button:hover{
 #search-bar{
     background-color: white;
     padding: 0.5em 1.5em;
-    box-shadow: 20px 20px 20px 20px lightgray ;
+    box-shadow: 20px 5px 20px 20px lightgray ; 
+    position: fixed;
+    max-width: 100%;
+    width: 82%;
 }
 
 #search-field{
@@ -188,6 +191,7 @@ button:hover{
 #user-list{
     background-color: white;
     margin: 1em 1em;
+    margin-top: 5em;
     padding-left:1em;
     padding-right: 1em;
     display: none;
