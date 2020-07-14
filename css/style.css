@@ -67,6 +67,7 @@ button:hover{
 
 #menu-options ul{
     padding-inline-start: 0%;
+    margin-block-start: 0em;
 }
 
 .menu-option{
@@ -76,24 +77,30 @@ button:hover{
 
 .sub-menu-option{
     width: 100%;
-    height: 2em;
-    padding: 0.35em 0em;
+    height: 3em;
+    padding: 0em 0em;
 }
 
 .side-menu-sub-button{
     width: 100%;
     height: 100%;
-    padding-left: 4em;
+    padding-left: 3.2em;
     text-align: left;
     margin: 0%;
-    color: white;   
-    background-color: #25282d;
+    color: white; 
+    background-color: inherit;  
     border: none;
 }
 #sub-menu-authentication{
     display: none;
 }
 
+.menu-button-highlight{
+    background-color: #363b41;
+}
+.menu-button-extra-highlight{
+    background-color: #484c55;
+}
 .side-menu-sub-button:hover{
     background-color: #6e4bd3;
     position: relative;
@@ -183,6 +190,7 @@ button:hover{
     margin: 1em 1em;
     padding-left:1em;
     padding-right: 1em;
+    display: none;
     border: black 1px solid;
 }
 

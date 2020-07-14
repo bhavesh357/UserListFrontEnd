@@ -17,10 +17,10 @@
                     <li class="menu-option"><button class="side-menu-button"><i class="flaticon-folder"></i>Transaction</button></li>
                     <li class="menu-option"><button class="side-menu-button"><i class="flaticon-settings"></i>System Setting</button></li>
                     <li class="menu-option"><button class="side-menu-button"><i class="flaticon-question"></i>Suggested Question</button></li>
-                    <li class="menu-option"><button onclick="showSubMenu('authentication')" class="side-menu-button" id="authentication" value="authetication"><i class="flaticon-password"></i>Authentication</button></li>
+                    <li id="authentication-menu-button" class="menu-option"><button onclick="showSubMenu('authentication')" class="side-menu-button" id="authentication" value="authetication"><i class="flaticon-password"></i>Authentication</button></li>
                     <div id="sub-menu-authentication" class="sub-menu-list" >
-                        <ul class="sub-menu">
-                            <li class="sub-menu-option"><button class="side-menu-sub-button">Users</button></li>
+                        <ul class="menu-button-highlight sub-menu ">
+                            <li id="users-sub-button" class="sub-menu-option"><button onclick="showUsers()" class="side-menu-sub-button">Users</button></li>
                             <li class="sub-menu-option"><button class="side-menu-sub-button">Groups</button></li>
                             <li class="sub-menu-option"><button class="side-menu-sub-button">Permissions</button></li>
                         </ul>

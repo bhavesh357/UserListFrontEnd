@@ -104,7 +104,6 @@ var users=[
         userList+="<div class=\"user-list-item\">\n"+
         "<div class=\"name list-column\"><i class=\"flaticon-user\"></i>"+users[i].name+"</div>\n"+
         "<div class=\"email list-column\">"+users[i].email+"</div>\n";
-        console.log(users[i].status);
         if(users[i].status.match("Active")){
             userList+="<div class=\"status list-column\"><div class=\"status-active\">"+users[i].status+"</div> </div>\n";
         }else{
@@ -118,18 +117,40 @@ var users=[
     }
     window.document.getElementById("user-list-details").innerHTML+=userList;
     var userCount= window.document.getElementsByClassName("user-list-item").length;
-    console.log(userCount);
     window.document.getElementById("user-count").innerHTML = "Users("+userCount+")";
-    var authenticationSubMenuFlag=true;
+
+
+    //code to hide/show sub menu
+    var userToggle=true;
     function showSubMenu(value){
         var subMenuId="sub-menu-"+value;
         var subMenu=document.getElementById(subMenuId);
         console.log(subMenu);
-        if(authenticationSubMenuFlag){
+        if(userToggle){
             subMenu.style.display="block";
-            authenticationSubMenuFlag=false;
+            document.getElementById("authentication").classList.add("menu-button-highlight");
+            userToggle=false;
         }else{
             subMenu.style.display="none";
-            authenticationSubMenuFlag=true;
+            document.getElementById("authentication").classList.remove("menu-button-highlight");
+            userToggle=true;
+        }
+    }
+
+
+    //code to toggle users
+    var userListToggle=true;
+    function showUsers(){
+        var userList=document.getElementById("user-list");
+        console.log(userListToggle);
+        console.log(userList);
+        if(userListToggle){
+            userList.style.display="block";
+            document.getElementById("users-sub-button").classList.add("menu-button-extra-highlight");
+            userListToggle=false;
+        }else{
+            userList.style.display="none";
+            document.getElementById("users-sub-button").classList.remove("menu-button-extra-highlight");
+            userListToggle=true;
         }
     }
