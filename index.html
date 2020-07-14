@@ -50,9 +50,9 @@
                 </div>
                 <div id="user-search">
                     <div id="user-search-placeholder">
-                        <input class="user-search-placeholder-text" type="text" placeholder="Search UserName,Email,Status,Role">
+                        <input oninput="search()" id="user-search-mini" class="user-search-placeholder-text" type="text" placeholder="Search UserName,Email,Status,Role">
                     </div>
-                    <button id="user-search-button"><i class="flaticon-search"></i></button>
+                    <button onclick="search()" id="user-search-button"><i class="flaticon-search"></i></button>
                 </div>
                 <div id="user-list-details">
                     <div class="user-list-head">
@@ -64,23 +64,8 @@
                         <div class="permission list-column">Permission</div>
                         <div class="option list-column"></div>
                     </div>
-                    <div class="user-list-item">
-                        <div class="name list-column"><i class="flaticon-user"></i>Bhavesh Kadam</div>
-                        <div class="email list-column">bkadam357@gmail.com</div>
-                        <div class="status list-column"><div class="status-inactive">Inactive</div> </div>
-                        <div class="role list-column">Administrator</div>
-                        <div class="last-login list-column">2d ago</div>
-                        <div class="permission list-column">Valid</div>
-                        <button class="option list-column">...</button>
-                    </div>
-                    <div class="user-list-item">
-                        <div class="name list-column"><i class="flaticon-user"></i>Bhavesh Kadam</div>
-                        <div class="email list-column">bkadam357@gmail.com</div>
-                        <div class="status list-column"><div class="status-active">Active</div> </div>
-                        <div class="role list-column">Administrator</div>
-                        <div class="last-login list-column">2d ago</div>
-                        <div class="permission list-column">Valid</div>
-                        <button class="option list-column">...</button>
+                    <div id="user-list-items">
+                        
                     </div>
                 </div>
             </div>

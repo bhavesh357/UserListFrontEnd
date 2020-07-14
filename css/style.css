@@ -225,6 +225,9 @@ button:hover{
 #add-user-button:hover{
     background-color: #6629ff;
 }
+#add-user-button:focus{
+    outline: none;
+}
 
 #user-search{
     width: 40%;
@@ -267,6 +270,13 @@ button:hover{
 #user-search-button:hover{
     background-color: #6e4bd3;
     color: white;
+}
+#user-search-button:focus{
+    outline: none;
+}
+#user-search-button:active{
+    position: relative;
+    top:1px;
 }
 
 .user-list-icon{
