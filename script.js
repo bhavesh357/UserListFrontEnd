@@ -157,6 +157,21 @@ var users=[
             userListToggle=true;
         }
     }
+
+    //code to toggle new user
+    var newUserToggle=true;
+    function toggleNewUser(){
+        var newUserForm=document.getElementById("new-user-div");
+        console.log(newUserToggle);
+        console.log(newUserForm);
+        if(newUserToggle){
+            newUserForm.style.display="block";
+            newUserToggle=false;
+        }else{
+            newUserForm.style.display="none";
+            newUserToggle=true;
+        }
+    }
     
     
     //code to search

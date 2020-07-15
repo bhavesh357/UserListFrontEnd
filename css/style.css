@@ -229,6 +229,15 @@ button:hover{
     outline: none;
 }
 
+#new-user-div{
+    display: none;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.new-user-label{
+    width: 30%;
+}
+
 #user-search{
     width: 40%;
     display: flex;

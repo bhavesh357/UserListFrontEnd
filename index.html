@@ -46,12 +46,12 @@
             <div id="user-list">
                 <div id="user-number">
                     <h2 id="user-count">Users(20)</h2>
-                    <button id="add-user-button">+ ADD NEW</button>
+                    <button onclick="toggleNewUser()" id="add-user-button">+ ADD NEW</button>
                 </div>
                 <div id="new-user-div">
-                    <label>Enter Name : </label><input id="new-name" type="text"><br>
-                    <label>Enter Email : </label><input id="new-email" type="text"><br>
-                    <label>Enter Status : </label>
+                    <label class="new-user-label">Enter Name : </label><input id="new-name" type="text"><br>
+                    <label class="new-user-label">Enter Email : </label><input id="new-email" type="text"><br>
+                    <label class="new-user-label">Enter Status : </label>
                     <select name="status" id="new-status">
                         <option value="Active">Active</option>
                         <option value="Inactive">Inactive</option>
@@ -59,15 +59,15 @@
                     
                     
                     
-                    <label>Enter Role : </label>
+                    <label class="new-user-label">Enter Role : </label>
                     <select name="status" id="new-role">
                         <option value="User">User</option>
                         <option value="Administrator">Administrator</option>
                     </select><br>
 
-                    <label>Enter Last Login : </label><input id="last-login" type="number"><br>
+                    <label class="new-user-label">Enter Last Login : </label><input id="last-login" type="number"><br>
                     
-                    <label>Enter Permission : </label>
+                    <label class="new-user-label">Enter Permission : </label>
                     <select name="status" id="new-permission">
                         <option value="Valid">Valid</option>
                         <option value="Invalid">Invalid</option>
