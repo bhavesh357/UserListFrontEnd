@@ -1,5 +1,6 @@
 var users=[
     {
+        id:1,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -7,6 +8,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:2,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -14,6 +16,7 @@ var users=[
         lastLogin:"3d ago",
         permission:"Valid"
     },{
+        id:3,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -21,6 +24,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:4,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -28,6 +32,7 @@ var users=[
         lastLogin:"3d ago",
         permission:"Valid"
     },{
+        id:5,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -35,6 +40,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:6,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -42,6 +48,7 @@ var users=[
         lastLogin:"3d ago",
         permission:"Valid"
     },{
+        id:7,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -49,6 +56,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:8,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -56,6 +64,7 @@ var users=[
         lastLogin:"3d ago",
         permission:"Valid"
     },{
+        id:9,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -63,6 +72,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:10,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -70,6 +80,7 @@ var users=[
         lastLogin:"3d ago",
         permission:"Valid"
     },{
+        id:11,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -77,6 +88,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:12,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -84,6 +96,7 @@ var users=[
         lastLogin:"3d ago",
         permission:"Valid"
     },{
+        id:13,
         name: "Bhavesh Kadam",
         email:"bkadam357@gmail.com",
         status:"Active",
@@ -91,6 +104,7 @@ var users=[
         lastLogin:"2d ago",
         permission:"Valid"
     },{
+        id:14,
         name: "Bhavesh Kale",
         email:"bkadam357@gmail.com",
         status:"Inactive",
@@ -109,9 +123,9 @@ var users=[
                 "<div class=\"name list-column\"><i class=\"flaticon-user\"></i>"+users[i].name+"</div>\n"+
                 "<div class=\"email list-column\">"+users[i].email+"</div>\n";
                 if(users[i].status.match("Active")){
-                    userList+="<div class=\"status list-column\"><div class=\"status-active\">"+users[i].status+"</div> </div>\n";
+                    userList+="<div class=\"status list-column\"><button onclick=\"toggleStatus("+users[i].id+")\" class=\"status-button status-active\">"+users[i].status+"</button> </div>\n";
                 }else{
-                    userList+="<div class=\"status list-column\"><div class=\"status-inactive\">"+users[i].status+"</div> </div>\n";
+                    userList+="<div class=\"status list-column\"><button onclick=\"toggleStatus("+users[i].id+")\" class=\"status-button status-inactive\">"+users[i].status+"</button> </div>\n";
                 }
                 userList+="<div class=\"role list-column\">"+users[i].role+"</div>\n"+
                 "<div class=\"last-login list-column\">"+users[i].lastLogin+"</div>\n"+
@@ -218,6 +232,24 @@ var users=[
         users.push(newUser);
         loadUsers(users);
         toggleNewUser();
+    }
+
+
+    //code to toggle status
+    function toggleStatus(idNumber){
+        for(let i=0;users.length>i;i++){
+            if(users[i].id==idNumber){
+                console.log(users[i]);
+                if(users[i].status.localeCompare("Active")==0){
+                    users[i].status="Inactive";
+                }else{
+                    users[i].status="Active";
+                }
+                console.log(users[i]);
+            }
+        }
+        
+        loadUsers(users);
     }
     
     document.getElementById("user-search-mini").addEventListener(oninput,search);

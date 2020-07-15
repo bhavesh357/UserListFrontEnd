@@ -12,6 +12,10 @@ input[type="text" i] {
 button{
     font-family: 'Roboto', sans-serif;
 }
+
+button:focus{
+    outline: none;
+}
 button:hover{
     cursor: pointer;
 }
@@ -406,16 +410,17 @@ button:hover{
 
 .status-active{
     width: 50%;
-    padding-left: 0.5em;
     color: green;
     border: green 1px solid;
 }
 
 .status-inactive{
     width: 60%;
-    padding-left: 0.5em;
     color: gray;
     border: gray 1px solid;
+}
+.status-button{
+    padding-left: 0.5em;
 }
 .role{
     min-width: 10%;
