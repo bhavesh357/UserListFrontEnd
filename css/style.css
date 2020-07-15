@@ -428,4 +428,8 @@ button:hover{
     background-color: white;
     border: none;
     font-weight: bold ;
+
+}
+.option.list-column:focus{
+    outline: none;
 }
