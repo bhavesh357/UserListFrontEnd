@@ -382,6 +382,15 @@ button:hover{
     border-top: #dddddd 1px solid;
 }
 
+.no-user-list-item{
+    padding: 0.5em 0em;
+    border-right: #dddddd 1px solid;
+    border-left: #dddddd 1px solid;
+    border-top: #dddddd 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
 .list-column{
     padding-left: 1em;
 }

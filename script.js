@@ -101,20 +101,24 @@ var users=[
     
     function loadUsers(users){
         var userList=""
-        for(var i=0;i<users.length;i++){
-            userList+="<div class=\"user-list-item\">\n"+
-            "<div class=\"name list-column\"><i class=\"flaticon-user\"></i>"+users[i].name+"</div>\n"+
-            "<div class=\"email list-column\">"+users[i].email+"</div>\n";
-            if(users[i].status.match("Active")){
-                userList+="<div class=\"status list-column\"><div class=\"status-active\">"+users[i].status+"</div> </div>\n";
-            }else{
-                userList+="<div class=\"status list-column\"><div class=\"status-inactive\">"+users[i].status+"</div> </div>\n";
+        if(users.length==0){
+            userList="<div class=\"no-user-list-item\">No User Found</div>"
+        }else{
+            for(var i=0;i<users.length;i++){
+                userList+="<div class=\"user-list-item\">\n"+
+                "<div class=\"name list-column\"><i class=\"flaticon-user\"></i>"+users[i].name+"</div>\n"+
+                "<div class=\"email list-column\">"+users[i].email+"</div>\n";
+                if(users[i].status.match("Active")){
+                    userList+="<div class=\"status list-column\"><div class=\"status-active\">"+users[i].status+"</div> </div>\n";
+                }else{
+                    userList+="<div class=\"status list-column\"><div class=\"status-inactive\">"+users[i].status+"</div> </div>\n";
+                }
+                userList+="<div class=\"role list-column\">"+users[i].role+"</div>\n"+
+                "<div class=\"last-login list-column\">"+users[i].lastLogin+"</div>\n"+
+                "<div class=\"permission list-column\">"+users[i].permission+"</div>\n"+
+                "<button class=\"option list-column\">...</button>\n"+
+                "</div>";
             }
-            userList+="<div class=\"role list-column\">"+users[i].role+"</div>\n"+
-            "<div class=\"last-login list-column\">"+users[i].lastLogin+"</div>\n"+
-            "<div class=\"permission list-column\">"+users[i].permission+"</div>\n"+
-            "<button class=\"option list-column\">...</button>\n"+
-            "</div>";
         }
         window.document.getElementById("user-list-items").innerHTML=userList;
         var userCount= window.document.getElementsByClassName("user-list-item").length;
@@ -157,7 +161,7 @@ var users=[
             userListToggle=true;
         }
     }
-
+    
     //code to toggle new user
     var newUserToggle=true;
     function toggleNewUser(){
@@ -192,7 +196,7 @@ var users=[
         loadUsers(searchUsers);
         
     }
-
+    
     function addUser(){
         var form=document.getElementById("new-user-form");
         console.log(form);
