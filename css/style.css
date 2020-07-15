@@ -231,11 +231,16 @@ button:hover{
 
 #new-user-div{
     display: none;
+    width: 35%;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-.new-user-label{
-    width: 30%;
+.new-user-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    border: #dddddd 1px solid;
 }
 
 #user-search{
