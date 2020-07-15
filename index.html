@@ -7,6 +7,73 @@
     <title>Cuddle</title>
 </head>
 <body>
+    
+    <div id="bg-modal">
+        <div class="modal-new-user">
+            <button id="modal-close" onclick="toggleNewUser()">X</button>
+            <div id="new-user-div">
+                <h3 id="modal-header">Register New User</h3>
+                <div class="new-user-row">
+                    <div class="new-user-column">
+                        <label class="new-user-label"></label>Enter Name : </label>
+                    </div>
+                    <div class="new-user-input-column">
+                        <input id="new-name" type="text">
+                    </div>
+                </div>
+                <div class="new-user-row">
+                    <div class="new-user-column">
+                        <label class="new-user-label">Enter Email : </label>
+                    </div>
+                    <div class="new-user-input-column">
+                        <input id="new-email" type="text">
+                    </div>
+                </div>
+                <div class="new-user-row">
+                    <div class="new-user-column">
+                        <label class="new-user-label">Enter Status : </label>
+                    </div>
+                    <div class="new-user-input-column">
+                        <select name="status" id="new-status">
+                            <option value="Active">Active</option>
+                            <option value="Inactive">Inactive</option>
+                        </select><br>
+                    </div>
+                </div>
+                <div class="new-user-row">
+                    <div class="new-user-column">
+                        <label class="new-user-label">Enter Role : </label>
+                    </div>
+                    <div class="new-user-input-column">
+                        <select name="status" id="new-role">
+                            <option value="User">User</option>
+                            <option value="Administrator">Administrator</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="new-user-row">
+                    <div class="new-user-column">
+                        <label class="new-user-label">Enter Last Login : </label>
+                    </div>
+                    <div class="new-user-input-column">
+                        <input id="last-login" type="number">
+                    </div>
+                </div>
+                <div class="new-user-row">
+                    <div class="new-user-column">
+                        <label class="new-user-label">Enter Permission : </label>
+                    </div>
+                    <div class="new-user-input-column">
+                        <select name="status" id="new-permission">
+                            <option value="Valid">Valid</option>
+                            <option value="Invalid">Invalid</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="pop-up-add" onclick="addUser()">Add</button>
+            </div>
+        </div>
+    </div>
     <div id="app-ui">
         <div id="side-menu">
             <div id="menu-title">
@@ -47,70 +114,6 @@
                 <div id="user-number">
                     <h2 id="user-count">Users(20)</h2>
                     <button onclick="toggleNewUser()" id="add-user-button">+ ADD NEW</button>
-                </div>
-                <div id="new-user-div">
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <label class="new-user-label"></label>Enter Name : </label>
-                        </div>
-                        <div class="new-user-input-column">
-                            <input id="new-name" type="text">
-                        </div>
-                    </div>
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <label class="new-user-label">Enter Email : </label>
-                        </div>
-                        <div class="new-user-input-column">
-                            <input id="new-email" type="text">
-                        </div>
-                    </div>
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <label class="new-user-label">Enter Status : </label>
-                        </div>
-                        <div class="new-user-input-column">
-                            <select name="status" id="new-status">
-                                <option value="Active">Active</option>
-                                <option value="Inactive">Inactive</option>
-                            </select><br>
-                        </div>
-                    </div>
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <label class="new-user-label">Enter Role : </label>
-                        </div>
-                        <div class="new-user-input-column">
-                            <select name="status" id="new-role">
-                                <option value="User">User</option>
-                                <option value="Administrator">Administrator</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <label class="new-user-label">Enter Last Login : </label>
-                        </div>
-                        <div class="new-user-input-column">
-                            <input id="last-login" type="number">
-                        </div>
-                    </div>
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <label class="new-user-label">Enter Permission : </label>
-                        </div>
-                        <div class="new-user-input-column">
-                            <select name="status" id="new-permission">
-                                <option value="Valid">Valid</option>
-                                <option value="Invalid">Invalid</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="new-user-row">
-                        <div class="new-user-column">
-                            <button onclick="addUser()">Add</button>
-                        </div>
-                    </div>
                 </div>
                 <div id="user-search">
                     <div id="user-search-placeholder">

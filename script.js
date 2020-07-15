@@ -161,11 +161,11 @@ var users=[
     //code to toggle new user
     var newUserToggle=true;
     function toggleNewUser(){
-        var newUserForm=document.getElementById("new-user-div");
+        var newUserForm=document.getElementById("bg-modal");
         console.log(newUserToggle);
         console.log(newUserForm);
         if(newUserToggle){
-            newUserForm.style.display="block";
+            newUserForm.style.display="flex";
             newUserToggle=false;
         }else{
             newUserForm.style.display="none";
@@ -213,6 +213,7 @@ var users=[
         console.log(newUser);
         users.push(newUser);
         loadUsers(users);
+        toggleNewUser();
     }
     
     document.getElementById("user-search-mini").addEventListener(oninput,search);

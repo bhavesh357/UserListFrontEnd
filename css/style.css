@@ -229,9 +229,72 @@ button:hover{
     outline: none;
 }
 
-#new-user-div{
+#bg-modal{
     display: none;
-    width: 35%;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0,0.7);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-close{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 1.5em;
+    width: 40px;
+    background: none;
+    border: none;
+}
+
+#modal-close:focus{
+    outline: none;
+}
+#modal-close:hover{
+    top:4.5%;
+    color: #6e4bd3;
+}
+.modal-new-user{
+    width: 525px;
+    height: 425px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5%;
+}
+
+#modal-header{
+    display: flex;
+    justify-content: center;
+}
+
+#pop-up-add{
+    
+    position: relative;
+    left: 83%;
+    padding: 0.5em 1em;
+    margin: 1em 0em;
+}
+#pop-up-add:hover{
+    background-color: #6e4bd3;
+    border-color: #6e4bd3;
+}
+#pop-up-add:focus{
+    outline: none;
+    
+}
+
+
+#new-user-div{
+    display: block;
+    width: 80%;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
@@ -239,8 +302,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5em 1em;
-    border: #dddddd 1px solid;
+    padding: 0.75em 1em;
 }
 
 #user-search{
