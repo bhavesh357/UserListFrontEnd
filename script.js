@@ -273,5 +273,18 @@ var users=[
         
         loadUsers(users);
     }
+
+    var navbarFlag=true;
+    function toggleNavbar(){
+        if(navbarFlag){
+            document.getElementById("side-menu-bottom").style.display=  "flex";
+            document.getElementById("side-menu").style.minHeight=  "100%";
+            navbarFlag=false;
+        }else{
+            document.getElementById("side-menu-bottom").style.display=  "none";
+            document.getElementById("side-menu").style.minHeight=  "10%";
+            navbarFlag=true;
+        }
+    }
     
     document.getElementById("user-search-mini").addEventListener(oninput,search);
