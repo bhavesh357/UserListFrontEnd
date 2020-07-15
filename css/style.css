@@ -263,6 +263,12 @@ button:hover{
     top:4.5%;
     color: #6e4bd3;
 }
+
+#new-error-message{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
 .modal-new-user{
     width: 525px;
     height: 425px;

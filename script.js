@@ -210,31 +210,53 @@ var users=[
         loadUsers(searchUsers);
         
     }
-    
-    function addUser(){
-        var form=document.getElementById("new-user-form");
-        console.log(form);
-        var newUser={
-            name: "",
-            email:"",
-            status:"",
-            role:"",
-            lastLogin:"",
-            permission:""
+    //code to validate form
+    function validateForm(){
+        var nameRegex = /([A-Z]{1}[a-z]{1,10} [A-Z]{1}[a-z]{1,10})\w+/;
+        var emailRegex =/[\w\d]{1,}[.\-#!]?[\w\d]{1,}@[\w\d]{1,}.[a-z]{2,3}.?([a-z]{2})?/;
+        var error="";
+        if(document.getElementById("last-login").value<0){
+            error="Enter positive last Login day";
+        }else if(emailRegex.test(document.getElementById("new-email").value)==false){
+            error="Enter proper email id";
+        }else if(nameRegex.test(document.getElementById("new-name").value)==false){
+            error="Enter proper name";
         }
-        newUser.name=document.getElementById("new-name").value;
-        newUser.email=document.getElementById("new-email").value;
-        newUser.status=document.getElementById("new-status").value;
-        newUser.role=document.getElementById("new-role").value;
-        newUser.lastLogin=document.getElementById("last-login").value+"d ago";
-        newUser.permission=document.getElementById("new-permission").value;
-        console.log(newUser);
-        users.push(newUser);
-        loadUsers(users);
-        toggleNewUser();
+        if(error.length==0){
+            return true;
+        }
+        document.getElementById("new-error-message").innerHTML=error;
+        return false;
     }
 
 
+    function addUser(){
+        var validationFlag=validateForm();
+        if(validationFlag==true){
+            var form=document.getElementById("new-user-form");
+            console.log(form);
+            var newUser={
+                name: "",
+                email:"",
+                status:"",
+                role:"",
+                lastLogin:"",
+                permission:""
+            }
+            newUser.name=document.getElementById("new-name").value;
+            newUser.email=document.getElementById("new-email").value;
+            newUser.status=document.getElementById("new-status").value;
+            newUser.role=document.getElementById("new-role").value;
+            newUser.lastLogin=document.getElementById("last-login").value+"d ago";
+            newUser.permission=document.getElementById("new-permission").value;
+            console.log(newUser);
+            users.push(newUser);
+            loadUsers(users);
+            toggleNewUser();
+        }
+    }
+    
+    
     //code to toggle status
     function toggleStatus(idNumber){
         for(let i=0;users.length>i;i++){
