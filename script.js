@@ -277,11 +277,15 @@ var users=[
     var navbarFlag=true;
     function toggleNavbar(){
         if(navbarFlag){
-            document.getElementById("side-menu-bottom").style.display=  "flex";
+            document.getElementById("menu-user").style.display=  "flex";
+            
+            document.getElementById("menu-options").style.display=  "flex";
             document.getElementById("side-menu").style.minHeight=  "100%";
             navbarFlag=false;
         }else{
-            document.getElementById("side-menu-bottom").style.display=  "none";
+            document.getElementById("menu-user").style.display=  "none";
+            
+            document.getElementById("menu-options").style.display=  "none";
             document.getElementById("side-menu").style.minHeight=  "10%";
             navbarFlag=true;
         }

@@ -80,6 +80,7 @@ button:hover{
 }
 
 #menu-options ul{
+    width: 100%;
     padding-inline-start: 0%;
     margin-block-start: 0em;
 }
@@ -123,10 +124,6 @@ button:hover{
 
 .side-menu-sub-button:focus{
     outline: none;
-}
-
-#side-menu-bottom{
-    display: none;
 }
 
 .user-picture{
@@ -487,12 +484,6 @@ button:hover{
         height: auto;
     }
     
-    #side-menu-bottom{
-        height: 90%;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
     .side-menu-button{
         padding: 0.5em 1em;
         font-size: 4em;
@@ -513,14 +504,39 @@ button:hover{
     
     #nav-bar-button{
         display: block;
-        position: absolute;
+        position: fixed;
         font-size: 6em;
         right: 8%;
-        top: 1.5%;
+        top: 1.7%;
         width: 100px;
         background-color: #25282d;
         color: white;
         border: none;
     }
     
+    #menu-user{
+        display: none;
+    }
+    
+    #menu-options{
+        display: none;
+    }
+    
+    #user-name{
+        font-size: 4em;
+    }
+    
+    .user-picture{
+        height: 150px;
+        width: 150px;
+        margin-right: 3em;
+        margin-top: 3em;
+        margin-left: 2em;
+        border-radius: 45%;
+
+    }
+
+    #user-details{
+        font-size: 3em;
+    }
 }

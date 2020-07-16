@@ -82,27 +82,25 @@
                 <div id="user-status">ADMIN</div>
                 <button onclick="toggleNavbar()" id="nav-bar-button">X</button>
             </div>
-            <div id="side-menu-bottom">
-                <div id="menu-options">
-                    <ul>
-                        <li class="menu-option"><button class="side-menu-button"><i class="flaticon-folder side-menu-icon"></i>Transaction</button></li>
-                        <li class="menu-option"><button class="side-menu-button"><i class="flaticon-settings side-menu-icon"></i>System Setting</button></li>
-                        <li class="menu-option"><button class="side-menu-button"><i class="flaticon-question side-menu-icon"></i>Suggested Question</button></li>
-                        <li id="authentication-menu-button" class="menu-option"><button onclick="showSubMenu('authentication')" class="side-menu-button" id="authentication" value="authetication"><i class="flaticon-password"></i>Authentication</button></li>
-                        <div id="sub-menu-authentication" class="sub-menu-list" >
-                            <ul class="menu-button-highlight sub-menu ">
-                                <li id="users-sub-button" class="sub-menu-option"><button onclick="showUsers()" class="side-menu-sub-button">Users</button></li>
-                                <li class="sub-menu-option"><button class="side-menu-sub-button">Groups</button></li>
-                                <li class="sub-menu-option"><button class="side-menu-sub-button">Permissions</button></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </div>
-                <div id="menu-user" class="menu-button-highlight">
-                    <img src="img/spiderman.jpg" class="user-picture">
-                    <h4 id="user-name">Ryan Larson</h4>
-                    <button id="user-details">></button>
-                </div>
+            <div id="menu-options">
+                <ul>
+                    <li class="menu-option"><button class="side-menu-button"><i class="flaticon-folder side-menu-icon"></i>Transaction</button></li>
+                    <li class="menu-option"><button class="side-menu-button"><i class="flaticon-settings side-menu-icon"></i>System Setting</button></li>
+                    <li class="menu-option"><button class="side-menu-button"><i class="flaticon-question side-menu-icon"></i>Suggested Question</button></li>
+                    <li id="authentication-menu-button" class="menu-option"><button onclick="showSubMenu('authentication')" class="side-menu-button" id="authentication" value="authetication"><i class="flaticon-password"></i>Authentication</button></li>
+                    <div id="sub-menu-authentication" class="sub-menu-list" >
+                        <ul class="menu-button-highlight sub-menu ">
+                            <li id="users-sub-button" class="sub-menu-option"><button onclick="showUsers()" class="side-menu-sub-button">Users</button></li>
+                            <li class="sub-menu-option"><button class="side-menu-sub-button">Groups</button></li>
+                            <li class="sub-menu-option"><button class="side-menu-sub-button">Permissions</button></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <div id="menu-user" class="menu-button-highlight">
+                <img src="img/spiderman.jpg" class="user-picture">
+                <h4 id="user-name">Ryan Larson</h4>
+                <button id="user-details">></button>
             </div>
         </div>
         <div id="list">
