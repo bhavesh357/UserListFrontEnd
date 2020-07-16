@@ -174,6 +174,9 @@ var users=[
             document.getElementById("users-sub-button").classList.remove("menu-button-extra-highlight");
             userListToggle=true;
         }
+        if(window.innerWidth<1000){
+            toggleNavbar();
+        }
     }
     
     //code to toggle new user

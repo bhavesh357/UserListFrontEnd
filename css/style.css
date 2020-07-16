@@ -611,7 +611,7 @@ button:hover{
     }
 
     .new-user-input-column{
-        width: 40%;
+        width: 40% ;
     }
 
     .new-user-input-column input{
@@ -622,5 +622,6 @@ button:hover{
         font-size: 1em;
         width: 100%;
     }
+
 
 }
