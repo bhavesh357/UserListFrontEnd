@@ -539,4 +539,21 @@ button:hover{
     #user-details{
         font-size: 3em;
     }
+    #list{
+        margin-left: 0em;
+        width: 100%;
+    }
+
+    #search-bar{
+        position: relative;
+        width: auto;
+        max-width: 100%;
+    }
+
+    #search-placeholder{
+        font-size: 3em;
+    }
+    #search-button{
+        font-size: 3em;
+    }
 }
