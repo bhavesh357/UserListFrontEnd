@@ -175,7 +175,7 @@ var users=[
             userListToggle=true;
         }
         if(window.innerWidth<1000){
-            toggleNavbar();
+            toggleNavBar();
         }
     }
     
@@ -278,7 +278,7 @@ var users=[
     }
 
     var navbarFlag=true;
-    function toggleNavbar(){
+    function toggleNavBar(){
         if(navbarFlag){
             document.getElementById("menu-user").style.display=  "flex";
             

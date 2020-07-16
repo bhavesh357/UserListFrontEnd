@@ -623,5 +623,23 @@ button:hover{
         width: 100%;
     }
 
+    .line{
+        height: 10px;
+        width:100px ;
+        background-color: white;
+        margin: 25px;
+    }
+
+    #menu-title{
+        position: relative;
+    }
+
+    #hamburger{
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%,-60%);
+    }
 
 }
