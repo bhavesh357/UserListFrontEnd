@@ -533,9 +533,9 @@ button:hover{
         margin-top: 3em;
         margin-left: 2em;
         border-radius: 45%;
-
+        
     }
-
+    
     #user-details{
         font-size: 3em;
     }
@@ -543,17 +543,84 @@ button:hover{
         margin-left: 0em;
         width: 100%;
     }
-
+    
     #search-bar{
         position: relative;
         width: auto;
         max-width: 100%;
     }
-
+    
     #search-placeholder{
         font-size: 3em;
     }
     #search-button{
         font-size: 3em;
     }
+    
+    #user-list{
+        font-size: 3em;
+        overflow-y: hidden;
+    }
+
+    #user-list-details{
+        overflow-y: scroll;
+        width: max-content;
+    }
+
+    .name{
+        min-width: 30%;
+    }
+
+    .name i::before{
+        font-size: 1em;
+    }
+
+    .email{
+        min-width: 30%;
+    }
+
+    .status{
+        min-width: 10%;
+    }
+
+    .status-button{
+        font-size: 0.75em;
+    padding: 0em 0.25em;
+    width: auto;
+    }
+
+    .role{
+        min-width: 20%;
+    }
+
+    .permission{
+        min-width: 20%;
+    }
+
+    #user-search{
+        width: 100%;
+    }
+    .small-search-button:before{
+        font-size: 4em !important;
+    }
+
+    .modal-new-user{
+        width: 90%;
+        height: 60%;
+        font-size: 2.5em;
+    }
+
+    .new-user-input-column{
+        width: 40%;
+    }
+
+    .new-user-input-column input{
+        font-size: 1em;
+        width: 100%;
+    }
+    .new-user-input-column select{
+        font-size: 1em;
+        width: 100%;
+    }
+
 }
