@@ -148,11 +148,11 @@ var users=[
         var subMenu=document.getElementById(subMenuId);
         console.log(subMenu);
         if(userToggle){
-            subMenu.style.display="block";
+            subMenu.style.left="0%";
             document.getElementById("authentication").classList.add("menu-button-highlight");
             userToggle=false;
         }else{
-            subMenu.style.display="none";
+            subMenu.style.left="-100%";
             document.getElementById("authentication").classList.remove("menu-button-highlight");
             userToggle=true;
         }
@@ -292,6 +292,7 @@ var users=[
             document.getElementById("side-menu").style.minHeight=  "10%";
             navbarFlag=true;
         }
+        document.getElementById("hamburger").classList.toggle("make-x");
     }
     
     document.getElementById("user-search-mini").addEventListener(oninput,search);
