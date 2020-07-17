@@ -90,6 +90,12 @@ button:hover{
     list-style-type: none;
 }
 
+.sub-menu-list{
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
 .sub-menu-option{
     width: 100%;
     height: 3em;
@@ -469,12 +475,6 @@ button:hover{
         transition: all 0.3s ease;
     }
     
-    .sub-menu-list{
-        position: absolute;
-        left: -100%;
-        width: 100%;
-        transition: all 0.3s ease 0s;
-    }
     #app-name {
         padding-left: 1em;
         font-size: 4em;
